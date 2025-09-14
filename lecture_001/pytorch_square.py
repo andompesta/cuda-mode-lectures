@@ -29,9 +29,12 @@ def square_2(a):
 def square_3(a):
     return a ** 2
 
-time_pytorch_function(torch.square, b)
-time_pytorch_function(square_2, b)
-time_pytorch_function(square_3, b)
+print()
+print(f"time function squere: {time_pytorch_function(torch.square, b)}")
+print(f"time function squere 2: {time_pytorch_function(square_2, b)}")
+print(f"time function squere 3: {time_pytorch_function(square_3, b)}")
+
+print()
 
 print("=============")
 print("Profiling torch.square")
